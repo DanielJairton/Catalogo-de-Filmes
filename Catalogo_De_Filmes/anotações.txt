@@ -1,0 +1,28 @@
+Comandos Usados:
+    - npm create vit@latest
+        - cd pasta projeto
+        - npm install
+        - npm install react-icons react-router-dom
+        - npm run dev
+
+API TMDB
+    - link: https://developer.themoviedb.org/reference/intro/getting-started
+    - key : c15ceab1b3e31ae24de8be6e3737e784
+    - documentation link : https://developer.themoviedb.org/docs/getting-started
+
+npm run dev para rodar
+
+
+
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMTVjZWFiMWIzZTMxYWUyNGRlOGJlNmUzNzM3ZTc4NCIsInN1YiI6IjY1YTkxYjk2MmM2YjdiMDEyZWExZjk1MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.iz-DzM4GpTtmG9OJBFBVTFftBTRJKWptdiFsz6TTGfI'
+  }
+};
+
+fetch('https://api.themoviedb.org/3/authentication', options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
