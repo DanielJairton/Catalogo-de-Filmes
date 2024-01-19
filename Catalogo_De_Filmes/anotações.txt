@@ -12,7 +12,8 @@ API TMDB
 
 npm run dev para rodar
 
-
+Erros:
+  - App.jsx: navbar causa um bug que faz nada aparecer na tela
 
 const options = {
   method: 'GET',

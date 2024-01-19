@@ -1,11 +1,18 @@
-// import { useState } from 'react'
+import { Outlet } from 'react-router-dom'
+
+import NavBar from './components/NavBar'
+
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <h2>Catalogo de Filmes</h2>
+      <div className='App'>
+        <NavBar />
+        <h2>Catalogo de Filmes</h2>
+        <Outlet />
+      </div>
     </>
   )
 }

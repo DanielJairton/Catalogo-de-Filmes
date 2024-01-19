@@ -42,12 +42,3 @@
 } */
 
 /* ---------------------------------------------------------------------------- */
-
-body{
-  /* background-color: aliceblue; */
-  /* background: rgb(0,0,0);
-  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(81,90,94,1) 100%); */
-  background: #000000;
-  background: radial-gradient(circle farthest-corner at center center, #000000 0%, #6E6E6E 100%);
-  color: white;
-}
