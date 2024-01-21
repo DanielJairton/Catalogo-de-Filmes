@@ -5,6 +5,11 @@
     margin: 2rem 0rem 1rem;
 }
 
+.container .title svg {
+    color: #F7D354;
+    vertical-align: top;
+}
+
 .title .query-text {
     color: #F7D354;
 }

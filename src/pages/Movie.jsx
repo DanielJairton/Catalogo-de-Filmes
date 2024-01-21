@@ -17,7 +17,7 @@ const Movie = () => {
         const res = await fetch(url);
         const data = await res.json();
 
-        console.log(data);
+        // console.log(data);
         setMovie(data);
     }
 
@@ -29,7 +29,8 @@ const Movie = () => {
     }
 
     useEffect(() => {
-        const movieURL = `${moviesURL}${id}?${apiKey}`;
+        const movieURL = `${moviesURL}${id}?language=pt-BR&${apiKey}`;
+        // console.log("Movie URL: " + movieURL);
         getMovie(movieURL);
     }, [])
 
@@ -39,28 +40,28 @@ const Movie = () => {
                 <MovieCard movie={movie} showLink={false} />
                 <p className="tagline">{movie.tagline}</p>
                 <div className="info">
-                    <h3>
+                    <h3 className="subtitulo" >
                         <BsWallet2/> Orçamento:
                     </h3>
                     <p>{formatCurrency(movie.budget)}</p>
                 </div>
 
                 <div className="info">
-                    <h3>
+                    <h3 className="subtitulo">
                         <BsGraphUp/> Receita:
                     </h3>
                     <p>{formatCurrency(movie.revenue)}</p>
                 </div>
 
                 <div className="info">
-                    <h3>
+                    <h3 className="subtitulo">
                         <BsHourglassSplit/> Duração:
                     </h3>
                     <p>{movie.runtime} Minutos</p>
                 </div>
 
                 <div className="info description">
-                    <h3>
+                    <h3 className="subtitulo">
                         <BsFillFileEarmarkTextFill/> Descrição:
                     </h3>
                     <p>{movie.overview}</p>
