@@ -1,3 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #F7D354;
+  transition: .5;
+}
+
+a:hover {
+  color: #b8930c;
+}
+
+
+/* --------------------------------------------------------------------- */
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
