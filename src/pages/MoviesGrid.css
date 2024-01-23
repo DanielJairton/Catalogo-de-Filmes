@@ -6,12 +6,14 @@
 }
 
 .container .title svg {
-    color: #F7D354;
+    /* color: #F7D354; */
+    color: #30d5c8;
     vertical-align: top;
 }
 
 .title .query-text {
-    color: #F7D354;
+    /* color: #F7D354; */
+    color: #30d5c8;
 }
 
 .movies-container {
@@ -47,7 +49,8 @@
 }
 
 .movies-container div svg {
-    color: #F7D354;
+    /* color: #F7D354; */
+    color: #30d5c8;
 }
 
 .movies-container div:hover {
@@ -56,8 +59,10 @@
 }
 
 .movies-container div a {
-    background-color: #F7D354;
-    border: 2px solid #F7D354;
+    /* background-color: #F7D354;
+    border: 2px solid #F7D354; */
+    background-color: #30d5c8;
+    border: 2px solid #30d5c8;
     border-radius: 4px;
     color: black;
     padding: 1rem .5rem;
@@ -69,5 +74,6 @@
 
 .movies-container div a:hover {
     background-color: transparent;
-    color: #F7D354;
+    /* color: #F7D354; */
+    color: #30d5c8;
 }

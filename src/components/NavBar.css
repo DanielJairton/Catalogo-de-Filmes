@@ -9,7 +9,12 @@
 #navbar h2 a {
     display: flex;
     align-items: center;
+    color: #30d5c8;
     gap: .5rem;
+}
+
+#navbar h2 a:hover {
+    color: #29b6aa;
 }
 
 #navbar form {
@@ -18,8 +23,10 @@
 }
 
 #navbar form button {
-    background-color: #F7D354;
-    border: 2px solid #F7D354;
+    /* background-color: #F7D354;
+    border: 2px solid #F7D354; */
+    background-color: #30d5c8;
+    border: 2px solid #30d5c8;
     border-radius: 4px;
     color: black;
     padding: .3rem;
@@ -32,7 +39,8 @@
 
 #navbar form button:hover {
     background-color: transparent;
-    color: #F7D354;
+    /* color: #F7D354; */
+    color: #30d5c8;
 }
 
 #navbar input {

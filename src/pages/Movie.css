@@ -1,6 +1,7 @@
 .movie-page {
     color: white;
     background-color: #111;
+    /* background-color: #222; */
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -11,7 +12,13 @@
 
 .movie-page svg {
     font-size: 1.5rem;
-    color: #F7D354;
+    /* color: #F7D354;
+    color: darkcyan;
+    color: #ca2c92;
+    color: #0047ab;
+    color: #ee4b2b;
+    color: #ff5349; */
+    color: #30d5c8;
 }
 
 .movie-page .movie-card {
@@ -30,6 +37,13 @@
 
 .movie-page .info h3 {
     margin-top: 1rem;
+}
+
+.movie-page .info .dateLancamento {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: medium;
 }
 
 .movie-page .movie-card p {

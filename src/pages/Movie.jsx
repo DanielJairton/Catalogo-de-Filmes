@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { BsGraphUp, BsWallet2, BsHourglass, BsFillFileEarmarkTextFill, BsHourglassSplit } from 'react-icons/bs';
+import { BsGraphUp, BsWallet2, BsHourglass, BsFillFileEarmarkTextFill, BsHourglassSplit, BsFillCalendarEventFill
+} from 'react-icons/bs';
 
 import MovieCard from "../components/MovieCard";
 
@@ -29,7 +30,7 @@ const Movie = () => {
     }
 
     useEffect(() => {
-        const movieURL = `${moviesURL}${id}?language=pt-BR&${apiKey}`;
+        const movieURL = `${moviesURL}${id}?language=pt-BR&region=BR&${apiKey}`;
         // console.log("Movie URL: " + movieURL);
         getMovie(movieURL);
     }, [])
@@ -39,6 +40,14 @@ const Movie = () => {
             {movie && (<>
                 <MovieCard movie={movie} showLink={false} />
                 <p className="tagline">{movie.tagline}</p>
+
+                <div className="info">
+                    <h3 className="subtitulo">
+                        <BsFillCalendarEventFill /> Laçamento:
+                    </h3>
+                    <input type="date" readOnly value={movie.release_date} className="dateLancamento"/>
+                </div>
+
                 <div className="info">
                     <h3 className="subtitulo" >
                         <BsWallet2/> Orçamento:
