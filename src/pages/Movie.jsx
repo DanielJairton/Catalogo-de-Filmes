@@ -45,7 +45,7 @@ const Movie = () => {
                     <h3 className="subtitulo">
                         <BsFillCalendarEventFill /> Laçamento:
                     </h3>
-                    <input type="date" readOnly value={movie.release_date} className="dateLancamento"/>
+                    <input type="date" disabled value={movie.release_date} className="dateLancamento"/>
                 </div>
 
                 <div className="info">

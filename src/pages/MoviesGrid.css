@@ -77,3 +77,9 @@
     /* color: #F7D354; */
     color: #30d5c8;
 }
+
+@media screen and (max-width: 800px) {
+    .movies-container div {
+        width: 40vw;
+    }
+}

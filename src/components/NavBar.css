@@ -53,3 +53,21 @@
     background-color: whitesmoke;
     outline: 2px solid rgba(128, 128, 128, 0.76);
 }
+
+@media screen and (max-width:800px) {
+    #navbar {
+        width: 100vw;
+    }
+
+    /* #navbar input {
+        width: 100px;
+    } */
+
+    #navbar form button {
+        font-size: 0px;
+    }
+
+    #navbar form button svg {
+        font-size: 20.8px;
+    }
+}
